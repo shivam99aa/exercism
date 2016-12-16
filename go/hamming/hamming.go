@@ -11,7 +11,7 @@ func Distance(a, b string) (int, error) {
 	var hamming = 0
 
 	if len(a) == len(b) {
-		for index, _ := range a {
+		for index := range a {
 			if b[index] != a[index] {
 				hamming++
 			}
