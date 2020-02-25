@@ -1,28 +1,29 @@
-# Leap
+# Two Fer
 
-Given a year, report if it is a leap year.
+`Two-fer` or `2-fer` is short for two for one. One for you and one for me.
 
-The tricky thing here is that a leap year in the Gregorian calendar occurs:
+Given a name, return a string with the message:
 
 ```text
-on every year that is evenly divisible by 4
-  except every year that is evenly divisible by 100
-    unless the year is also evenly divisible by 400
+One for X, one for me.
 ```
 
-For example, 1997 is not a leap year, but 1996 is.  1900 is not a leap
-year, but 2000 is.
+Where X is the given name.
 
-## Notes
+However, if the name is missing, return the string:
 
-Though our exercise adopts some very simple rules, there is more to
-learn!
+```text
+One for you, one for me.
+```
 
-For a delightful, four minute explanation of the whole leap year
-phenomenon, go watch [this youtube video][video].
+Here are some examples:
 
-[video]: http://www.youtube.com/watch?v=xX96xng7sAE
-
+|Name    |String to return
+|:-------|:------------------
+|Alice   |One for Alice, one for me.
+|Bob     |One for Bob, one for me.
+|        |One for you, one for me.
+|Zaphod  |One for Zaphod, one for me.
 
 ## Exception messages
 
@@ -40,10 +41,10 @@ raise Exception("Meaningful message indicating the source of the error")
 
 ## Running the tests
 
-To run the tests, run `pytest leap_test.py`
+To run the tests, run `pytest two_fer_test.py`
 
 Alternatively, you can tell Python to run the pytest module:
-`python -m pytest leap_test.py`
+`python -m pytest two_fer_test.py`
 
 ### Common `pytest` options
 
@@ -55,7 +56,7 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/leap` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/two-fer` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
@@ -64,7 +65,7 @@ please see [Running the Tests](http://exercism.io/tracks/python/tests).
 
 ## Source
 
-JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
+[https://github.com/exercism/problem-specifications/issues/757](https://github.com/exercism/problem-specifications/issues/757)
 
 ## Submitting Incomplete Solutions
 
